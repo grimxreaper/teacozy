@@ -4,6 +4,7 @@ body {
     color: seashell;
     background-color: black;
     text-align: center;
+    margin: 0;
 }
 
 nav {
@@ -93,8 +94,9 @@ nav {
     width: 1200px;
     padding-top: 70px; 
     margin: auto;
+    /* setting the margin to auto is what fixed the problem of this block-size
+    not moving to center; */
     /* Why this padding number here? */
-
 }
 
 #location-grid {
@@ -127,4 +129,15 @@ nav {
     text-align: center;
     padding: 5px;
     line-height: 1;
+}
+
+.contact {
+    height: 200px;
+    line-height: 1;
+
+}
+
+footer {
+    text-align: left;
+    
 }
