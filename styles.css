@@ -6,3 +6,14 @@
     opacity: 0.9;
     text-align: center;
 }
+
+.nav {
+    text-decoration: underline;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+}
+
+#logo {
+    height: 50px;
+    margin-left: 10px;
+}
