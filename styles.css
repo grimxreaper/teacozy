@@ -1,20 +1,118 @@
-* {
+body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
     text-align: center;
 }
 
-.nav {
-    text-decoration: underline;
+nav {
     border-bottom: 1px solid seashell;
+    margin: 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    height: 69px;
+    align-items: center;
+    background-color: black;
     position: fixed;
 }
-
+.nav li {
+    display: inline-block;
+    padding: 20px 10px;
+    text-align: right;
+    flex-grow: 1;
+    text-decoration: none;
+}
+.nav a {
+    color: seashell;
+}
 #logo {
     height: 50px;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
+.main {
+    width: 1200px;
+    height: 700px;
+    padding-top: 69px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    opacity: 0.9;
+
+}
+.mission-section {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg") 
+    center center no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    width: 1200px;
+}
+.banner {
+    background-color: black;
+    width: 1200px;
+
+}
+.featured-section {
+    padding-top: 70px;
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+}
+.tea-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tea-image {
+    display: block;
+    height: 200px;
+    margin: 10px;
+}
+.tea-grid p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+.block {
+    padding: 5px;
+}
+
+#locations {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 1200px;
+}
+
+#location-grid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#location-block {
+    display: block;
+    width: 300px;
+    padding: 15px 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: black; */
+
+}
+
+#location-block p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
