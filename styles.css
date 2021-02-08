@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 body {
-=======
-* {
->>>>>>> gh-pages
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
-<<<<<<< HEAD
     text-align: center;
     margin: 0;
 }
@@ -36,21 +31,10 @@ nav {
 }
 .nav a {
     color: seashell;
-=======
-    opacity: 0.9;
-    text-align: center;
-}
-
-.nav {
-    text-decoration: underline;
-    border-bottom: 1px solid seashell;
-    position: fixed;
->>>>>>> gh-pages
 }
 
 #logo {
     height: 50px;
-<<<<<<< HEAD
     padding-left: 10px;
     justify-content: left;
 }
@@ -163,7 +147,3 @@ footer {
     padding-left: 20px;
 }
 
-=======
-    margin-left: 10px;
-}
->>>>>>> gh-pages
