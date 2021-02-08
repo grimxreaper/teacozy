@@ -19,6 +19,8 @@ nav {
     align-items: center;
     background-color: black;
     position: fixed;
+    z-index: 1;
+    /* used z-index to make sure nav was superimposed */
 }
 .nav li {
     display: inline-block;
@@ -56,17 +58,17 @@ nav {
     justify-content: center;
     padding-top: 70px;
     width: 1200px;
+    margin: auto;
 }
 .banner {
     background-color: black;
     width: 1200px;
-
 }
 .featured-section {
     padding-top: 70px;
     height: 700px;
     width: 1000px;
-    margin: auto;
+    margin: 69px auto;
 }
 .tea-grid {
     display: flex;
@@ -94,6 +96,7 @@ nav {
     width: 1200px;
     padding-top: 70px; 
     margin: auto;
+    
     /* setting the margin to auto is what fixed the problem of this block-size
     not moving to center; */
     /* Why this padding number here? */
@@ -118,7 +121,7 @@ nav {
     background-color: black;
     padding: 10px;
     margin: 5px 20px;
-    opacity: 1;
+    opacity: 1.0;
 }
 .location-header {
     margin-bottom: 15px;
@@ -141,3 +144,4 @@ footer {
     text-align: left;
     padding-left: 20px;
 }
+
