@@ -32,9 +32,11 @@ nav {
 .nav a {
     color: seashell;
 }
+
 #logo {
     height: 50px;
     padding-left: 10px;
+    justify-content: left;
 }
 
 .main {
