@@ -1,18 +1,20 @@
 language: node_js
 node_js:
-- 14.15.5
-cache: npm
+  - 14.15.5
+cache: yarn
 
 before_install: 
 install:
-- npm ci
-- npm i -g webpack
+  - yarn install
+  - npm i -g webpack
 
-before_script:
 script:
-after_success:
-after_failure:
-after_script:
-before_deploy:
+  - yarn test
+  - yarn run build 
+  
 deploy:
-after_deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    brand: gh-pages
