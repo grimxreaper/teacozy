@@ -17,4 +17,4 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   on:
-    brand: gh-pages
+    branch: gh-pages
