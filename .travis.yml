@@ -1,16 +1,19 @@
 language: node_js
 node_js:
   - 14.15.5
-cache: yarn
+# cache: yarn
 
 before_install: 
 install:
-  - yarn install
-  - npm i -g webpack
+  - echo "install!"
+  # - yarn install
+  # - npm i -g webpack
 
 script:
-  - yarn test
-  - yarn run build 
+  # - yarn test
+  # - yarn run build 
+  - echo "script!"
+
   
 deploy:
   provider: pages
@@ -18,4 +21,4 @@ deploy:
   github-token: $GITHUB_TOKEN
   local_dir: build
   on:
-    branch: master
+    branch: main
