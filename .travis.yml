@@ -13,6 +13,10 @@ script:
   # - yarn test
   # - yarn run build 
   - echo "script!"
+  - mkdir build
+  - cp index.html build/
+  - cp styles.css build/
+
 
   
 deploy:
