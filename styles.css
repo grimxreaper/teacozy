@@ -1,0 +1,150 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    border-bottom: 1px solid seashell;
+    margin: 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    height: 69px;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    /* used z-index to make sure nav was superimposed */
+}
+.nav li {
+    display: inline-block;
+    padding: 20px 10px;
+    text-align: right;
+    flex-grow: 1;
+    text-decoration: none;
+}
+.nav a {
+    color: seashell;
+}
+
+#logo {
+    height: 50px;
+    padding-left: 10px;
+    justify-content: left;
+}
+
+.main {
+    width: 1200px;
+    height: 700px;
+    padding-top: 69px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    opacity: 0.9;
+
+}
+.mission-section {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg") 
+    center center no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    width: 1200px;
+    margin: auto;
+}
+.banner {
+    background-color: black;
+    width: 1200px;
+}
+.featured-section {
+    padding-top: 70px;
+    height: 700px;
+    width: 1000px;
+    margin: 69px auto;
+}
+.tea-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tea-image {
+    display: block;
+    height: 200px;
+    margin: 10px;
+}
+.tea-grid p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+.block {
+    padding: 5px;
+}
+
+.locations {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    height: 500px;
+    width: 1200px;
+    padding-top: 70px; 
+    margin: auto;
+    
+    /* setting the margin to auto is what fixed the problem of this block-size
+    not moving to center; */
+    /* Why this padding number here? */
+}
+
+#location-grid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+#location-block {
+    display: flex;
+    width: 300px;
+    padding: 15px 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    margin: 5px 20px;
+    opacity: 1.0;
+}
+.location-header {
+    margin-bottom: 15px;
+}
+
+#location-block p {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    line-height: 1;
+}
+
+.contact {
+    height: 200px;
+    line-height: 1.6;
+
+}
+
+footer {
+    text-align: left;
+    padding-left: 20px;
+    /* margin */
+}
+
